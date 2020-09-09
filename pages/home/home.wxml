@@ -1,0 +1,42 @@
+<!-- <text class="iconfont icon-fangdajing"></text>   -->
+<import src="/pages/templates/stars-templates/stars-templates.wxml" />
+<view class="headaer-search">
+  <view class="search-main"
+    bindtap="toSearch"
+  >
+    <text class="iconfont icon-fangdajing"></text>
+    搜索
+  </view>
+</view>
+<view class="container">
+  <view class="list" wx:for="{{list}}" wx:key="index">
+    <view class="list-header">
+     <view class="header-title">{{item.title}}</view>
+     <view
+      class="header-content"
+      bindtap="toMore"
+      data-title="{{item.title}}"
+    >
+       产看更多<text class="iconfont icon-iconfontjiantou4"></text>
+     </view>
+    </view>
+    <scroll-view scroll-x='true'>
+      <view class="list-img">   
+            <view class="img-item" wx:for="{{item.movie}}" wx:for-key="item" wx:key="index" bindtap="toDetails"
+            data-id="{{item.id}}">
+
+                  <image wx:if='{{item.id == 326}}' src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2520456502.webp"></image>
+                 
+                  <image wx:elif='{{item.id == 52}}' src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2561716440.webp"></image>
+                  <image wx:elif='{{item.id == 211}}' src="https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2372307693.webp"></image>
+                  <image wx:else src="{{item.images.large}}"></image>
+                  <view class="item-name overflow-name">{{item.title}}</view>
+                  <view class="item-star">
+                    <template is="stars" data="{{item}}"></template>
+                    <text>{{item.rating.average}}</text>
+                  </view>
+            </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

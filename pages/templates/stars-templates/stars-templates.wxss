@@ -1,0 +1,8 @@
+/* pages/templates/stars-templates/stars-templates.wxss */
+.stars{
+  display: flex;
+}
+.stars image{
+  width: 30rpx;
+  height: 30rpx;
+}

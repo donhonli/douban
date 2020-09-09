@@ -1,0 +1,66 @@
+@import '/pages/templates/stars-templates/stars-templates.wxss';
+.headaer-search{
+  background: #42bd56;
+  padding: 0rpx 35rpx 20rpx 35rpx;
+}
+.search-main{
+  background: #fff;
+  border-radius: 10rpx;
+  text-align: center;
+  color: #ccc;
+  font-size: 32rpx;
+  padding: 6rpx;
+}
+
+/* 内容区块 */
+
+.list-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 30rpx;
+  font-size: 28rpx;
+}
+
+.header-content{
+  color: #42bd56;
+}
+.header-content text{
+  font-size: 24rpx;
+  font-weight: bold;
+}
+.list-img{
+  display: flex;
+
+
+}
+.img-item{
+  padding: 0 20rpx;
+  width: 230rpx;
+}
+.img-item>image{
+  width: 230rpx;
+  height: 330rpx;
+  border-radius: 10rpx;
+}
+.item-name{
+  text-align: center;
+  font-size: 28rpx;
+
+}
+.item-star{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+
+
+.item-star text{
+  font-size: 28rpx;
+  color: #555;
+ line-height: 30rpx;
+}
+.list{
+  padding-bottom: 20rpx;
+  border-bottom: 20rpx solid #f0f0f0;
+}

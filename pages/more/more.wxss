@@ -1,0 +1,32 @@
+/* pages/more/more.wxss */
+@import '/pages/templates/stars-templates/stars-templates.wxss';
+.more{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20rpx;
+  justify-content: space-between;
+  height: 1200rpx;
+}
+.more-item{
+  width: 200rpx;
+  margin-bottom: 20rpx;
+}
+.item-img{
+  width: 200rpx;
+  height: 300rpx;
+  border-radius: 10rpx;
+}
+.item-title{
+  text-align: center;
+  font-size: 32rpx;
+}
+.item-rating{
+  text-align: center;
+  font-size: 28rpx;
+  color: #555;
+}
+.rating-stars{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}

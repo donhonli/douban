@@ -13,7 +13,11 @@ const formatNumber = n => {
   n = n.toString()
   return n[1] ? n : '0' + n
 }
-
+const url = "";
+const geturl = function(data){
+  return url + data;
+}
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  geturl
 }

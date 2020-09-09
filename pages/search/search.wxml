@@ -1,0 +1,33 @@
+<!--pages/search/search.wxml-->
+<import src="/pages/templates/stars-templates/stars-templates.wxml" />
+<view class="search">
+  <view class="search-content"> 
+      <view class="iconfont icon-fangdajing"></view>
+      <input placeholder="搜索内容"
+        bindinput="inputValue"  
+      ></input>
+  </view>
+</view>
+<view class="search-main">
+  <view class="main-item" wx:for="{{list}}" wx:key="index" bindtap="toDetails" data-id="{{item.id}}">
+    <view class="main-img">
+          <image src="{{item.images.large}}"></image>
+    </view>
+
+    <view class="main-content">
+
+      <view class="content-name overflow-name">{{item.title}}</view> 
+      <view class="content-list"><view class="list-genres"><view wx:for='{{item.genres}}' wx:key="index">{{item}} /</view></view>
+      <view class="countries-list"><view class="countries" wx:for='{{item.countries}}' wx:key="index">{{item}} /</view></view>
+      
+      <text>{{item.year}}年上映</text></view>
+      <view class="rating">
+        <view class="rating-title">评分：</view>
+          
+          <view class="rating-stars"><template is="stars" data="{{item}}"></template></view>
+          <view class="rating-average">{{item.rating.average}}</view>
+        </view>
+
+    </view>
+  </view>
+</view>

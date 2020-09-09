@@ -1,0 +1,94 @@
+/* pages/details/details.wxss */
+@import '/pages/templates/stars-templates/stars-templates.wxss';
+.details-header{
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 10px;
+}
+.header-img image{
+  width: 230rpx;
+  height: 330rpx;
+  border-radius: 10rpx;
+}
+.header-content{
+  padding-left: 40rpx;
+}
+.content-list view{
+  margin: 10rpx 0;
+}
+.list-genres{
+  display: flex;
+}
+
+
+
+.content-name{
+  font-size: 45rpx;
+  font-weight: bold;  
+}
+.content-list{
+  font-size: 28rpx;
+  color: #888;
+}
+.rating{
+  
+  display: flex;
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  align-items: center;
+}
+.rating view{
+  margin-right: 10rpx;
+}
+.rating-title{
+ font-size: 42rpx;
+ font-weight: bold;
+color: #000;
+}
+.rating-average{
+  font-size: 36rpx;
+  font-weight: bold;
+  text-align: center;
+}
+.rating-stars{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.main{
+  padding: 20rpx;
+}
+.main-title{
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+.main-content{
+  font-size: 28rpx;
+}
+
+.per{
+  padding: 10px;
+}
+.per-content{
+  display: flex;
+  /* justify-content: space-around; */
+}
+.per-title{
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+.per-list{
+  font-size: 28rpx;
+  width: 230rpx;
+  padding-right: 10px;
+}
+.per-list image{
+  width: 230rpx;
+  height: 330rpx;
+  border-radius: 10rpx;
+}
+.per-list view{
+  text-align: center;
+}
